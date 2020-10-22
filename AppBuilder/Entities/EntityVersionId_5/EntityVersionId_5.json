@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 9,
+  "Id": 5,
+  "VersionId": 5,
+  "Name": "Person",
+  "PluralName": "Persons",
+  "Icon": "user-alt",
+  "Type": "UserCreated"
+}
