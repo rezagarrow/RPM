@@ -1,0 +1,240 @@
+{
+  "Name": "Person",
+  "Description": "Creates a new record of type Person",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 53,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "FirstName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Lastname",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "FullName",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"FullName is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Title",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Role",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Phone",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Email",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "LinkedIn",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Company",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Connector",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "StickyMemo",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Rating",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.0.Person",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "FirstName": "[FirstName]",
+        "Lastname": "[Lastname]",
+        "FullName": "[FullName]",
+        "Title": "[Title]",
+        "Role": "[Role]",
+        "Phone": "[Phone]",
+        "Email": "[Email]",
+        "LinkedIn": "[LinkedIn]",
+        "Company": "[Company]",
+        "Connector": "[Connector]",
+        "StickyMemo": "[StickyMemo]",
+        "Rating": "[Rating]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "Person"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.Person",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "Person"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "FirstName",
+            "value": "[CreatedRecord:FirstName]"
+          },
+          {
+            "name": "Lastname",
+            "value": "[CreatedRecord:Lastname]"
+          },
+          {
+            "name": "FullName",
+            "value": "[CreatedRecord:FullName]"
+          },
+          {
+            "name": "Title",
+            "value": "[CreatedRecord:Title]"
+          },
+          {
+            "name": "Role",
+            "value": "[CreatedRecord:Role]"
+          },
+          {
+            "name": "Phone",
+            "value": "[CreatedRecord:Phone]"
+          },
+          {
+            "name": "Email",
+            "value": "[CreatedRecord:Email]"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "[CreatedRecord:LinkedIn]"
+          },
+          {
+            "name": "Company",
+            "value": "[CreatedRecord:Company]"
+          },
+          {
+            "name": "Connector",
+            "value": "[CreatedRecord:Connector]"
+          },
+          {
+            "name": "StickyMemo",
+            "value": "[CreatedRecord:StickyMemo]"
+          },
+          {
+            "name": "Rating",
+            "value": "[CreatedRecord:Rating]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://prm-sandbox.apps.plantanapp.com/api/Person?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
