@@ -56,6 +56,10 @@
           {
             "name": "Description",
             "value": "[Record:Description]"
+          },
+          {
+            "name": "SortOrder",
+            "value": "[Record:SortOrder]"
           }
         ],
         "Headers": []
