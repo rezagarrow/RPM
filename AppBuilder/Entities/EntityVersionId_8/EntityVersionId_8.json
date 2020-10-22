@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 14,
+  "Id": 8,
+  "VersionId": 8,
+  "Name": "Industry",
+  "PluralName": "Industries",
+  "Icon": "table",
+  "Type": "UserCreated"
+}
