@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 12,
+  "Id": 7,
+  "VersionId": 7,
+  "Name": "Person Category",
+  "PluralName": "Person Categories",
+  "Icon": "table",
+  "Type": "UserCreated"
+}
