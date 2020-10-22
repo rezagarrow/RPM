@@ -1,0 +1,111 @@
+{
+  "Name": "Person",
+  "Description": "Returns the information of a Person record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 54,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.0.Person",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "Person"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "FirstName",
+            "value": "[Record:FirstName]"
+          },
+          {
+            "name": "Lastname",
+            "value": "[Record:Lastname]"
+          },
+          {
+            "name": "FullName",
+            "value": "[Record:FullName]"
+          },
+          {
+            "name": "Title",
+            "value": "[Record:Title]"
+          },
+          {
+            "name": "Role",
+            "value": "[Record:Role]"
+          },
+          {
+            "name": "Phone",
+            "value": "[Record:Phone]"
+          },
+          {
+            "name": "Email",
+            "value": "[Record:Email]"
+          },
+          {
+            "name": "LinkedIn",
+            "value": "[Record:LinkedIn]"
+          },
+          {
+            "name": "Company",
+            "value": "[Record:Company]"
+          },
+          {
+            "name": "Connector",
+            "value": "[Record:Connector]"
+          },
+          {
+            "name": "StickyMemo",
+            "value": "[Record:StickyMemo]"
+          },
+          {
+            "name": "Rating",
+            "value": "[Record:Rating]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
