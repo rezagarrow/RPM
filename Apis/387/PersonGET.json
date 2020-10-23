@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Person record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 70,
+  "OrderIndex": 78,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -86,8 +86,8 @@
             "value": "[Record:Company]"
           },
           {
-            "name": "Connector",
-            "value": "[Record:Connector]"
+            "name": "NetworkingSource",
+            "value": "[Record:NetworkingSource]"
           },
           {
             "name": "StickyMemo",
@@ -104,6 +104,10 @@
           {
             "name": "ConnectedOn",
             "value": "[Record:ConnectedOn]"
+          },
+          {
+            "name": "Category",
+            "value": "[Record:Category]"
           }
         ],
         "Headers": []
