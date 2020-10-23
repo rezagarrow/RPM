@@ -4,8 +4,8 @@
   "RecordNamePropertyId": 20,
   "Id": 12,
   "VersionId": 12,
-  "Name": "Person Role",
-  "PluralName": "Person Roles",
+  "Name": "Person Position",
+  "PluralName": "Person Positions",
   "Icon": "table",
   "Type": "UserCreated"
 }
