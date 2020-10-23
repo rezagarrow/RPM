@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Person record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 54,
+  "OrderIndex": 70,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -96,6 +96,10 @@
           {
             "name": "Rating",
             "value": "[Record:Rating]"
+          },
+          {
+            "name": "CareerPath",
+            "value": "[Record:CareerPath]"
           }
         ],
         "Headers": []
