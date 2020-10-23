@@ -130,6 +130,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "ConnectedOn",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -150,7 +159,8 @@
         "Connector": "[Connector]",
         "StickyMemo": "[StickyMemo]",
         "Rating": "[Rating]",
-        "CareerPath": "[CareerPath]"
+        "CareerPath": "[CareerPath]",
+        "ConnectedOn": "[ConnectedOn]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -234,6 +244,10 @@
           {
             "name": "CareerPath",
             "value": "[CreatedRecord:CareerPath]"
+          },
+          {
+            "name": "ConnectedOn",
+            "value": "[CreatedRecord:ConnectedOn]"
           }
         ],
         "Headers": [
