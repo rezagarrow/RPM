@@ -147,6 +147,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "ConnectedOn",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -167,7 +176,8 @@
         "Connector": "[Connector]",
         "StickyMemo": "[StickyMemo]",
         "Rating": "[Rating]",
-        "CareerPath": "[CareerPath]"
+        "CareerPath": "[CareerPath]",
+        "ConnectedOn": "[ConnectedOn]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
