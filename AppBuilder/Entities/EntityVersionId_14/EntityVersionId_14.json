@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": 43,
+  "RecordNamePropertyId": 34,
+  "Id": 14,
+  "VersionId": 14,
+  "Name": "Career Path",
+  "PluralName": "Career Paths",
+  "Icon": "table",
+  "Type": "UserCreated"
+}
