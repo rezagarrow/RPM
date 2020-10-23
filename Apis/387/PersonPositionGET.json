@@ -3,7 +3,7 @@
   "Description": "Returns the information of a Person Position record in JSON object format.",
   "HttpMethod": "GET",
   "IsEnabled": true,
-  "OrderIndex": 74,
+  "OrderIndex": 82,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
