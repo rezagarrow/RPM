@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Person record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 71,
+  "OrderIndex": 79,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -113,7 +113,7 @@
       "Validations": []
     },
     {
-      "Name": "Connector",
+      "Name": "NetworkingSource",
       "IsDeleted": false,
       "IsEnabled": true,
       "OrderIndex": 10,
@@ -156,6 +156,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Category",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -173,11 +182,12 @@
         "Email": "[Email]",
         "LinkedIn": "[LinkedIn]",
         "Company": "[Company]",
-        "Connector": "[Connector]",
+        "NetworkingSource": "[NetworkingSource]",
         "StickyMemo": "[StickyMemo]",
         "Rating": "[Rating]",
         "CareerPath": "[CareerPath]",
-        "ConnectedOn": "[ConnectedOn]"
+        "ConnectedOn": "[ConnectedOn]",
+        "Category": "[Category]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
