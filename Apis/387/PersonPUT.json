@@ -3,7 +3,7 @@
   "Description": "Updates the information of the provided Person record",
   "HttpMethod": "PUT",
   "IsEnabled": true,
-  "OrderIndex": 55,
+  "OrderIndex": 71,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -138,6 +138,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CareerPath",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -157,7 +166,8 @@
         "Company": "[Company]",
         "Connector": "[Connector]",
         "StickyMemo": "[StickyMemo]",
-        "Rating": "[Rating]"
+        "Rating": "[Rating]",
+        "CareerPath": "[CareerPath]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
