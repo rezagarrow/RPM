@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Person",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 69,
+  "OrderIndex": 77,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -96,7 +96,7 @@
       "Validations": []
     },
     {
-      "Name": "Connector",
+      "Name": "NetworkingSource",
       "IsDeleted": false,
       "IsEnabled": true,
       "OrderIndex": 9,
@@ -139,6 +139,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "Category",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -156,11 +165,12 @@
         "Email": "[Email]",
         "LinkedIn": "[LinkedIn]",
         "Company": "[Company]",
-        "Connector": "[Connector]",
+        "NetworkingSource": "[NetworkingSource]",
         "StickyMemo": "[StickyMemo]",
         "Rating": "[Rating]",
         "CareerPath": "[CareerPath]",
-        "ConnectedOn": "[ConnectedOn]"
+        "ConnectedOn": "[ConnectedOn]",
+        "Category": "[Category]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -230,8 +240,8 @@
             "value": "[CreatedRecord:Company]"
           },
           {
-            "name": "Connector",
-            "value": "[CreatedRecord:Connector]"
+            "name": "NetworkingSource",
+            "value": "[CreatedRecord:NetworkingSource]"
           },
           {
             "name": "StickyMemo",
@@ -248,6 +258,10 @@
           {
             "name": "ConnectedOn",
             "value": "[CreatedRecord:ConnectedOn]"
+          },
+          {
+            "name": "Category",
+            "value": "[CreatedRecord:Category]"
           }
         ],
         "Headers": [
