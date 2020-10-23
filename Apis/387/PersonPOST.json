@@ -3,7 +3,7 @@
   "Description": "Creates a new record of type Person",
   "HttpMethod": "POST",
   "IsEnabled": true,
-  "OrderIndex": 53,
+  "OrderIndex": 69,
   "CrossDomainPolicy": "PortalAliasesOnly",
   "Inputs": [
     {
@@ -121,6 +121,15 @@
       "Parameters": {},
       "InputTypeStr": "text",
       "Validations": []
+    },
+    {
+      "Name": "CareerPath",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
     }
   ],
   "Actions": [
@@ -140,7 +149,8 @@
         "Company": "[Company]",
         "Connector": "[Connector]",
         "StickyMemo": "[StickyMemo]",
-        "Rating": "[Rating]"
+        "Rating": "[Rating]",
+        "CareerPath": "[CareerPath]"
       },
       "IsEnabled": true,
       "ExecutionType": "OnExecute",
@@ -220,6 +230,10 @@
           {
             "name": "Rating",
             "value": "[CreatedRecord:Rating]"
+          },
+          {
+            "name": "CareerPath",
+            "value": "[CreatedRecord:CareerPath]"
           }
         ],
         "Headers": [
