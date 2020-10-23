@@ -742,14 +742,14 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;starrating&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Rating]&quot;,&quot;SaveToReport&quot;:false,&quot;StarsNo&quot;:&quot;&quot;,&quot;Step&quot;:&quot;1&quot;,&quot;Size&quot;:&quot;&quot;,&quot;MinimumRating&quot;:&quot;1&quot;,&quot;MaximumRating&quot;:&quot;5&quot;,&quot;SelectedStarColor&quot;:&quot;yellow&quot;,&quot;UnselectedStarColor&quot;:&quot;&quot;,&quot;StarCaptions&quot;:&quot;&quot;,&quot;StarCaptionClasses&quot;:&quot;&quot;,&quot;ShowCaption&quot;:&quot;&quot;,&quot;ShowClear&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:Rating]&quot;,&quot;SaveToReport&quot;:false,&quot;StarsNo&quot;:&quot;&quot;,&quot;Step&quot;:&quot;1&quot;,&quot;Size&quot;:&quot;&quot;,&quot;MinimumRating&quot;:&quot;1&quot;,&quot;MaximumRating&quot;:&quot;5&quot;,&quot;SelectedStarColor&quot;:&quot;#fc0&quot;,&quot;UnselectedStarColor&quot;:&quot;&quot;,&quot;StarCaptions&quot;:&quot;&quot;,&quot;StarCaptionClasses&quot;:&quot;&quot;,&quot;ShowCaption&quot;:&quot;&quot;,&quot;ShowClear&quot;:&quot;&quot;}&lt;/InputData&gt;
       &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;StarsNo /&gt;
       &lt;Step&gt;1&lt;/Step&gt;
       &lt;Size /&gt;
       &lt;MinimumRating&gt;1&lt;/MinimumRating&gt;
       &lt;MaximumRating&gt;5&lt;/MaximumRating&gt;
-      &lt;SelectedStarColor&gt;yellow&lt;/SelectedStarColor&gt;
+      &lt;SelectedStarColor&gt;#fc0&lt;/SelectedStarColor&gt;
       &lt;UnselectedStarColor /&gt;
       &lt;StarCaptions /&gt;
       &lt;StarCaptionClasses /&gt;
@@ -793,13 +793,20 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;dropdown-autocomplete&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:CareerPath]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Name] AS [Text] FROM [app].[CareerPath]&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;[original:CareerPath]&quot;,&quot;DisplayNumber&quot;:&quot;5&quot;,&quot;DataSource&quot;:{&quot;Value&quot;:&quot;SQL Query&quot;,&quot;Parameters&quot;:{&quot;SqlQuery&quot;:&quot;SELECT [Id] AS [Value], [Name] AS [Text] FROM [app].[CareerPath]&quot;}},&quot;DisableDropdownOnClick&quot;:&quot;&quot;,&quot;LinkTo&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:[],&quot;IsExpression&quot;:false},&quot;NoResults&quot;:&quot;No results found&quot;,&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;DisplayNumber&gt;5&lt;/DisplayNumber&gt;
       &lt;DataSource&gt;
         &lt;Value&gt;SQL Query&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/DataSource&gt;
       &lt;DisableDropdownOnClick /&gt;
+      &lt;LinkTo&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;System.Collections.ArrayList&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/LinkTo&gt;
+      &lt;NoResults&gt;No results found&lt;/NoResults&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
       &lt;Flag&gt;dropdown&lt;/Flag&gt;
       &lt;Value&gt;&lt;![CDATA[[original:CareerPath]]]&gt;&lt;/Value&gt;
       &lt;IsRequired&gt;False&lt;/IsRequired&gt;
@@ -1022,7 +1029,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.347&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1039,7 +1046,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1056,7 +1063,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.377&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1071,7 +1078,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.377&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Person&quot;},{&quot;name&quot;:&quot;original:FirstName&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Lastname&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:FullName&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Title&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Role&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Phone&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Email&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:LinkedIn&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Company&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Connector&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:StickyMemo&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Rating&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:CareerPath&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1087,7 +1094,7 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:PersonId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.377&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Person&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1103,7 +1110,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:5] &amp;amp;&amp;amp; ![HasRole:6] &amp;amp;&amp;amp; ![HasRole:7]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.377&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1118,7 +1125,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.0.Person&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:PersonId=]&quot;,&quot;FirstName&quot;:&quot;[p_FirstName]&quot;,&quot;Lastname&quot;:&quot;[p_Lastname]&quot;,&quot;FullName&quot;:&quot;[p_FullName]&quot;,&quot;Title&quot;:&quot;[p_Title]&quot;,&quot;Role&quot;:&quot;[r_RoleId]&quot;,&quot;Phone&quot;:&quot;[p_Phone]&quot;,&quot;Email&quot;:&quot;[p_Email]&quot;,&quot;LinkedIn&quot;:&quot;[p_LinkedIn]&quot;,&quot;Company&quot;:&quot;[r_CompanyId]&quot;,&quot;Connector&quot;:&quot;[p_Connector]&quot;,&quot;StickyMemo&quot;:&quot;[p_StickyMemo]&quot;,&quot;Rating&quot;:&quot;[p_Rating]&quot;,&quot;CareerPath&quot;:&quot;[r_CareerPathId]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1134,7 +1141,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.0.Person&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.347&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewPersonId&quot;,&quot;FirstName&quot;:&quot;[p_FirstName]&quot;,&quot;Lastname&quot;:&quot;[p_Lastname]&quot;,&quot;FullName&quot;:&quot;[p_FullName]&quot;,&quot;Title&quot;:&quot;[p_Title]&quot;,&quot;Role&quot;:&quot;[r_RoleId]&quot;,&quot;Phone&quot;:&quot;[p_Phone]&quot;,&quot;Email&quot;:&quot;[p_Email]&quot;,&quot;LinkedIn&quot;:&quot;[p_LinkedIn]&quot;,&quot;Company&quot;:&quot;[r_CompanyId]&quot;,&quot;Connector&quot;:&quot;[p_Connector]&quot;,&quot;StickyMemo&quot;:&quot;[p_StickyMemo]&quot;,&quot;Rating&quot;:&quot;[p_Rating]&quot;,&quot;CareerPath&quot;:&quot;[r_CareerPathId]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1151,7 +1158,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.347&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Persons/Detail?PersonId=[NewPersonId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1167,7 +1174,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;394&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1183,7 +1190,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.0.Person&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.377&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:PersonId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1199,7 +1206,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;393&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1215,7 +1222,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.347&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:391,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1230,7 +1237,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.24&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.347&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:392,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1246,7 +1253,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Persons/Detail?PersonId=[QueryString:PersonId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1262,7 +1269,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:391,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
@@ -1277,7 +1284,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2020-10-23T17:04:51.257&lt;/LastModified&gt;
+      &lt;LastModified&gt;2020-10-23T17:07:04.36&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;2&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:392,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;392&lt;/ModuleId&gt;
